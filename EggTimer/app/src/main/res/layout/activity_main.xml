@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vibhor.eggtimer.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewEgg"
+        android:layout_width="368dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/parent"
+        app:layout_constraintRight_toRightOf="@+id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.534"
+        app:srcCompat="@drawable/egg" />
+
+    <TextView
+        android:id="@+id/textViewClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mm:ss"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewEgg"
+        app:layout_constraintLeft_toLeftOf="@+id/imageViewEgg"
+        app:layout_constraintRight_toRightOf="@+id/imageViewEgg"
+        app:layout_constraintTop_toTopOf="@+id/imageViewEgg"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="timerFunction"
+        android:text="Go"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewEgg"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="@+id/imageViewEgg"
+        app:layout_constraintRight_toRightOf="@+id/imageViewEgg"
+        app:layout_constraintTop_toBottomOf="@+id/textViewClock"
+        app:layout_constraintVertical_bias="0.784" />
+
+</android.support.constraint.ConstraintLayout>
