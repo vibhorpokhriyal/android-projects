@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentButton0">#32b626</color>
+    <color name="colorAccentButton1">#2660b1</color>
+    <color name="colorAccentButton3">#c02a5d</color>
+    <color name="colorAccentButton4">#d4d725</color>
+    <color name="colorAccentButtonReset">#1c905a</color>
+    <color name="colorAccentWinnerMsg">#dacc0c</color>
+</resources>
